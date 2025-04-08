@@ -1,6 +1,6 @@
 ---
 variables:
-  PROJECT_DIR: Elders.Cronus.Serialization.NewtonsoftJson
+  PROJECT_DIR: One.Inception.Serialization.NewtonsoftJson
 
 trigger:
   branches:

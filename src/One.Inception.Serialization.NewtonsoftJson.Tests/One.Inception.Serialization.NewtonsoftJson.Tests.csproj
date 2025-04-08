@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <RootNamespace>One.Inception.Serialization.NewtonsoftJson.Tests</RootNamespace>
+    <StartupObject />
+    <ApplicationIcon />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Machine.Specifications" Version="1.1.2" />
+    <PackageReference Include="Machine.Specifications.Runner.VisualStudio" Version="2.10.2" />
+    <PackageReference Include="Machine.Specifications.Should" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\One.Inception.Serialization.NewtonsoftJson.Models\One.Inception.Serialization.NewtonsoftJson.Models.csproj" />
+    <ProjectReference Include="..\One.Inception.Serialization.NewtonsoftJson\One.Inception.Serialization.NewtonsoftJson.csproj" />
+  </ItemGroup>
+
+</Project>
