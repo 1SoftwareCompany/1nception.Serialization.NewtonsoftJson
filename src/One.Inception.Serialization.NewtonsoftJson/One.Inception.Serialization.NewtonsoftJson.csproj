@@ -29,8 +29,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="1nception" Version="12.0.0" />
-    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="9.0.1" />
+    <PackageReference Include="1nception" Version="12.1.0" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="9.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 

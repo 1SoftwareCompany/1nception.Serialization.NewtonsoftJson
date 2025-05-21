@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using One.Inception.EventStore;
+using One.Inception.Serializer;
 
 namespace One.Inception.Serialization.NewtonsoftJson
 {

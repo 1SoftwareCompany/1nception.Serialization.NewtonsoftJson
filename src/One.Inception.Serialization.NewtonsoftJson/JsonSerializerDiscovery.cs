@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using One.Inception.Discoveries;
-using One.Inception.EventStore;
 using One.Inception.Serialization.NewtonsoftJson;
+using One.Inception.Serializer;
 
 namespace One.Inception.Pipeline.Config
 {
@@ -17,8 +17,8 @@ namespace One.Inception.Pipeline.Config
 
         IEnumerable<DiscoveredModel> GetModels(DiscoveryContext context)
         {
-            yield return new DiscoveredModel(typeof(ISerializer), GetSerializer(context)); // Singleton
-            yield return new DiscoveredModel(typeof(IEventLookUp), typeof(EventLookupInByteArray), ServiceLifetime.Singleton);
+            yield return new DiscoveredModel(typeof(ISerializer), GetSerializer(context)) { CanOverrideDefaults = true }; // Singleton
+            yield return new DiscoveredModel(typeof(IEventLookUp), typeof(EventLookupInByteArray), ServiceLifetime.Singleton) { CanOverrideDefaults = true };
         }
 
         protected virtual ISerializer GetSerializer(DiscoveryContext context)
