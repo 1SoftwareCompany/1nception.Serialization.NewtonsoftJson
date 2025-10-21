@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net10.0</TargetFrameworks>
   </PropertyGroup>
 
   <!--Nuget-->
@@ -29,9 +29,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="1nception" Version="12.1.0" />
-    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="9.0.5" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="1nception" Version="13.0.0-preview.2" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="10.0.0-rc.2.25502.107" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
 </Project>
