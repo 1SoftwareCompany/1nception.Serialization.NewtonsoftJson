@@ -25,7 +25,7 @@
     <RootNamespace>One.Inception.Serialization.NewtonsoftJson</RootNamespace>
     <NeutralLanguage>en-US</NeutralLanguage>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <AssemblyVersion>12.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
