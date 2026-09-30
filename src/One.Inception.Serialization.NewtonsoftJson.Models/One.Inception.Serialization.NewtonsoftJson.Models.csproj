@@ -4,6 +4,6 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="1nception.Domain" Version="13.0.0" />
+    <PackageReference Include="1nception.Domain" Version="13.2.0" />
   </ItemGroup>
 </Project>

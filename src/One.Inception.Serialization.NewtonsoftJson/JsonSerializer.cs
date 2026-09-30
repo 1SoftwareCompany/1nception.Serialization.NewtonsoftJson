@@ -24,7 +24,7 @@ namespace One.Inception.Serialization.NewtonsoftJson
             serializerSettings.Converters.Add(new ReadOnlyMemoryJsonConverter<byte>());
             serializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
             serializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
-            serializerSettings.ContractResolver = new DataMemberContractResolver();
+            serializerSettings.ContractResolver = new MessageContractResolver();
             serializerSettings.TypeNameHandling = TypeNameHandling.Objects;
             serializerSettings.TypeNameAssemblyFormatHandling = Newtonsoft.Json.TypeNameAssemblyFormatHandling.Simple;
             serializerSettings.Formatting = Formatting.None;
@@ -36,7 +36,7 @@ namespace One.Inception.Serialization.NewtonsoftJson
             deserializerSettings.Converters.Add(new ReadOnlyMemoryJsonConverter<byte>());
             deserializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
             deserializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
-            deserializerSettings.ContractResolver = new DataMemberContractResolver();
+            deserializerSettings.ContractResolver = new MessageContractResolver();
             deserializerSettings.TypeNameHandling = TypeNameHandling.Objects;
             deserializerSettings.TypeNameAssemblyFormatHandling = Newtonsoft.Json.TypeNameAssemblyFormatHandling.Simple;
             deserializerSettings.Formatting = Formatting.None;
